@@ -56,6 +56,7 @@ public abstract class LoginFilter implements Filter {
 					}
 				}
 			}
+		}
 			
 			UserDTO userDTO  = null;
 			if(StringUtils.isNoneBlank(token)) {
@@ -71,12 +72,9 @@ public abstract class LoginFilter implements Filter {
 				return ;
 			}
 			
-			
 			login(request,response,userDTO);
-			
 			chain.doFilter(servletRequest, servletResponse);
 			
-		}
 	}
 
 	/**
