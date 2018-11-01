@@ -1,0 +1,4 @@
+FROM python:3.6
+MAINTAINER deepsky deepsky@outlook.com
+
+RUN pip3 install thrift
